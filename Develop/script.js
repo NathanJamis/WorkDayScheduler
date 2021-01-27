@@ -5,14 +5,14 @@ var currentTime = m.format("HH");
 currentDay.textContent = m.format('LLLL');
 
 for (i = 9; i<=17; i++) {
-    var hourBlock = "#" + [i]
-    var selector = $(hourBlock).attr("hourValue");
+    var selector = "#" + [i]
+    var hourBlock = $(selector).attr("hourValue");
 
-    if (selector < currentTime) {
-        $(hourBlock).addClass("past");
-    } if (selector === currentTime) {
-        $(hourBlock).addClass("present");
-    } if (selector > currentTime) {
-        $(hourBlock).addClass("future");
+    if (hourBlock < currentTime) {
+        $(selector).addClass("past");
+    } if (hourBlock === currentTime) {
+        $(selector).addClass("present");
+    } if (hourBlock > currentTime) {
+        $(selector).addClass("future");
     };
 }
