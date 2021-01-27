@@ -1,10 +1,18 @@
 const m = moment();
 var currentDay = document.getElementById("currentDay");
+var currentTime = m.format("HH");
 
-currentDay.textContent = m.format('LLLL')
+currentDay.textContent = m.format('LLLL');
 
-// Set vars for time blocks
+for (i = 9; i<=17; i++) {
+    var hourBlock = "#" + [i]
+    var selector = $(hourBlock).attr("hourValue");
 
-// Set queries for time blocks --- to set hour block color
-
-// localStorage for textarea inputs
+    if (selector < currentTime) {
+        $(hourBlock).addClass("past");
+    } if (selector === currentTime) {
+        $(hourBlock).addClass("present");
+    } if (selector > currentTime) {
+        $(hourBlock).addClass("future");
+    };
+}
