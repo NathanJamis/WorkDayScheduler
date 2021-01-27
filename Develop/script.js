@@ -16,9 +16,11 @@ for (i = 9; i<=17; i++) {
         $(selector).addClass("future");
     };
 }
-$(".btn").click(function() {
-    var button = $(this)
-    var key = button.siblings(".event").val()
-    var value = button.siblings("textarea").attr;
+$(".btn").on("click", function() {
+    var button = $(this);
+    var key = button.siblings(".event").attr("id");
+    var value = button.siblings("textarea").val();
+    console.log(key, value);
     localStorage.setItem(key, value);
-})
+});
+$(selector).text(localStorage.getItem(i));
