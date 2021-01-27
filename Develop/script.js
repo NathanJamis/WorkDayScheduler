@@ -16,3 +16,9 @@ for (i = 9; i<=17; i++) {
         $(selector).addClass("future");
     };
 }
+$(".btn").click(function() {
+    var button = $(this)
+    var key = button.siblings(".event").val()
+    var value = button.siblings("textarea").attr;
+    localStorage.setItem(key, value);
+})
