@@ -1,5 +1,5 @@
 # Work Day Scheduler
-## This repo is for a simple work day planner.
+## This repo is for a simple work day planner. :calendar:
 ---
 ---
 As stated above, the [Work Day Scheduler](https://nathanjamis.github.io/WorkDayScheduler/) functions with the help of the [Moment.js](https://momentjs.com/) library.
@@ -9,10 +9,10 @@ As stated above, the [Work Day Scheduler](https://nathanjamis.github.io/WorkDayS
     * Red for the current hour
     * Green for future hours
 * The user can input into the hour block text areas, then click the save button on the right side of the corresponding hour block to save their input to the local storage
-## It's that simple!
+## It's that simple! :tada:
 ---
 ---
-## Visuals:
+## Visuals: :tv:
 ### Screenshot:
 ![Screenshot](https://github.com/NathanJamis/WorkDayScheduler/blob/main/Assets/Screenshot.png)
 ### Animated GIF:
