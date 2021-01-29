@@ -1,5 +1,4 @@
 const m = moment();
-m.hour(14);
 var currentDay = document.getElementById("currentDay");
 var currentTime = m.format("HH");
 
